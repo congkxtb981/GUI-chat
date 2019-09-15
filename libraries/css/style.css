@@ -457,8 +457,12 @@ label:focus,
 .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #fff;
 }
-.navbar-inverse .navbar-nav > li > a {
+/* .navbar-inverse .navbar-nav > li > a {
   color: #000;
+} */
+
+.navbar-inverse .navbar-toggle .icon-bar {
+ background-color: #333;
 }
 
 .dropdown-menu > li > a {
@@ -571,8 +575,7 @@ label:focus,
 }
 
 .searchBox {
-  width: 300px;
-  color: #fff;
+  color: #000;
   border: 1px solid #ebebeb;
   background: #fff;
   box-shadow: none;
@@ -582,6 +585,7 @@ label:focus,
   height: 30px;
   border-radius: 30px;
   padding-left: 10px;
+  width: 100%;
 }
 
 .searchBox::placeholder {
