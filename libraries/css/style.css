@@ -312,23 +312,7 @@ label:focus,
   z-index: 1;
 }
 
-/* 
-#noti_Container .modal-body{
-  position: relative;
-}
-#noti_Container .noti_content{
-  position: absolute;
-  height: 90%;
-}
-.noti_content > span {
-  width: 100%;
-  height: 30%;
-  color: #333;
-  vertical-align: middle;
-  border-bottom: 1px solid #eceff3;
-  cursor: pointer;
-}
- */
+
 #noti_Container {
   height: auto !important;
   width: 70%;
@@ -486,9 +470,7 @@ label:focus,
 .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #fff;
 }
-/* .navbar-inverse .navbar-nav > li > a {
-  color: #000;
-} */
+
 
 .navbar-inverse .navbar-toggle .icon-bar {
  background-color: #333;
@@ -506,7 +488,7 @@ label:focus,
 
 .avatar-small {
   width: 24px;
-  /* height: 24px; */
+
   border-radius: 16px 16px 0 16px;
 }
 

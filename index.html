@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="./libraries/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libraries/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./libraries/bower_components/AlertifyJS/build/css/alertify.css">
-    
+
     <link href="./libraries/css/auth.css" rel="stylesheet" />
 
     <script src="./libraries/bower_components/jquery/dist/jquery.min.js"></script>
@@ -19,6 +20,7 @@
 
     <script src="./libraries/js/authConfig.js" type="text/javascript"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="col-sm-2"></div>
@@ -44,7 +46,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                <td>Demo app chat</td>
+                                    <td>Demo app chat</td>
                                     <!-- <td>
                                         
                                     </td> -->
@@ -58,19 +60,21 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-7 text-center">
-                    <a class="btn big-login" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Đăng nhập</a>
-                    <a class="btn big-register" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Đăng ký</a>
+                    <a class="btn big-login" data-toggle="modal" href="javascript:void(0)"
+                        onclick="openLoginModal();">Đăng nhập</a>
+                    <a class="btn big-register" data-toggle="modal" href="javascript:void(0)"
+                        onclick="openRegisterModal();">Đăng ký</a>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
             <div class="row">
                 <div class="col-sm-12 text-center bottom-description">
                     <span>
-                        " Kết quả hôm nay chính là thành quả của hạt giống ngày xưa gieo ! "
+                        " Muốn đi cà khịa phải đi cùng nhau. Join app để cùng đi cà khịa! "
                     </span>
                     <br>
                     <span>
-                        " 📌Always do your best. What you plant now, you will harvest later ! "
+                        " 📌 Kết bạn muôn nơi "
                     </span>
                 </div>
             </div>
@@ -91,11 +95,13 @@
                         <div class="box">
                             <div class="content">
                                 <div class="social">
-                                    <a id="google_login" class="circle google" href="/auth/google" title="Đăng nhập bằng tài khoản Google">
-                                    <i class="fa fa-google-plus fa-fw"></i>
+                                    <a id="google_login" class="circle google" href="/auth/google"
+                                        title="Đăng nhập bằng tài khoản Google">
+                                        <i class="fa fa-google-plus fa-fw"></i>
                                     </a>
-                                    <a id="facebook_login" class="circle facebook" href="/auth/facebook" title="Đăng nhập bằng tài khoản Facebook">
-                                    <i class="fa fa-facebook fa-fw"></i>
+                                    <a id="facebook_login" class="circle facebook" href="/auth/facebook"
+                                        title="Đăng nhập bằng tài khoản Facebook">
+                                        <i class="fa fa-facebook fa-fw"></i>
                                     </a>
                                 </div>
                                 <div class="division">
@@ -109,32 +115,40 @@
                                         <input type="text" name="email" placeholder="Email" class="form-control" required>
                                         <input type="password" name="password" placeholder="Password" class="form-control" required>
                                         <!-- <input type="submit" value="Đăng nhập" class="btn btn-default btn-login">    -->
-                                        <a href="./master.html" class="btn btn-default btn-login"></a>
+                                        <a href="#" class="btn btn-default btn-login" onclick="login()">
+                                            Login</a>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- include('sections/register');-->
+
+                  
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                                 <div class="form">
-                                    <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                                        <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
-                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender" value="male" checked required> Nam</label>&nbsp;
-                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender" value="female" required> Nữ</label>&nbsp;
-                                        <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                                        <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required>
-                                        <input class="btn btn-default btn-register" type="submit" value="Tạo tài khoản" name="commit">
+                                    <form method="post" html="{:multipart=>true}" data-remote="true" action="/register"
+                                        accept-charset="UTF-8">
+                                        <input id="email" class="form-control" type="text" placeholder="Email"
+                                            name="email" required>
+                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender" value="male"
+                                                checked required> Nam</label>&nbsp;
+                                        &nbsp;<label class="radio-inline"><input type="radio" name="gender"
+                                                value="female" required> Nữ</label>&nbsp;
+                                        <input id="password" class="form-control" type="password" placeholder="Password"
+                                            name="password" required>
+                                        <input id="password_confirmation" class="form-control" type="password"
+                                            placeholder="Repeat Password" name="password_confirmation" required>
+                                        <input class="btn btn-default btn-register" type="submit" value="Tạo tài khoản"
+                                            name="commit">
                                     </form>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <div class="forgot login-footer">
                             <span>Bạn chưa có tài khoản?
-                            <a href="javascript: showRegisterForm();">Tạo một tài khoản mới</a>
+                                <a href="javascript: showRegisterForm();">Tạo một tài khoản mới</a>
                             </span>
                         </div>
                         <div class="forgot register-footer" style="display:none">
@@ -147,4 +161,5 @@
         </div>
     </div>
 </body>
+
 </html>
