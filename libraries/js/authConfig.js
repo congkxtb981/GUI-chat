@@ -1,8 +1,8 @@
 //config model
 function showRegisterForm() {
-  $(".loginBox").fadeOut("fast", function() {
+  $(".loginBox").fadeOut("fast", function () {
     $(".registerBox").fadeIn("fast");
-    $(".login-footer").fadeOut("fast", function() {
+    $(".login-footer").fadeOut("fast", function () {
       $(".register-footer").fadeIn("fast");
     });
     $(".modal-title").html("Đăng ký tài khoản");
@@ -13,9 +13,9 @@ function showRegisterForm() {
 }
 
 function showLoginForm() {
-  $("#loginModal .registerBox").fadeOut("fast", function() {
+  $("#loginModal .registerBox").fadeOut("fast", function () {
     $(".loginBox").fadeIn("fast");
-    $(".register-footer").fadeOut("fast", function() {
+    $(".register-footer").fadeOut("fast", function () {
       $(".login-footer").fadeIn("fast");
     });
 
@@ -28,14 +28,27 @@ function showLoginForm() {
 
 function openLoginModal() {
   showLoginForm();
-  setTimeout(function() {
+  setTimeout(function () {
     $("#loginModal").modal("show");
   }, 230);
 }
 
 function openRegisterModal() {
   showRegisterForm();
-  setTimeout(function() {
+  setTimeout(function () {
     $("#loginModal").modal("show");
   }, 230);
 }
+
+function login() {
+  let acc = $("input:text").val();
+  let pass = $("input:password").val();
+  console.log(acc);
+  console.log(pass);
+  if (acc == "cong" && pass == "cong") {
+    window.location.replace("./master.html");
+  }
+
+}
+
+
