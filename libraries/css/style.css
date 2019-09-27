@@ -881,7 +881,7 @@ label:focus,
 }
 
 .show-image-chat {
-  max-width: 50%;
+  max-width:100%;
 }
 
 #loader {
@@ -1307,4 +1307,12 @@ label:focus,
 .user-modal-alert-password-error,
 .user-modal-alert-password-success {
   display: none;
+}
+.all-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.all-images img {
+  width: 49%;
 }
